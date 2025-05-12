@@ -71,7 +71,7 @@ export function AboutMe() {
             <Button variant="outline" className="flex items-center justify-start gap-2 h-10" asChild>
               <a href="https://github.com/ganeshkrishnareddy" target="_blank" rel="noopener noreferrer">
                 <Github className="h-4 w-4 text-cipher-primary" />
-                <span>github.com/ganeshkrishnareddy</span>
+                <span>My GitHub Profile</span>
               </a>
             </Button>
           </div>
