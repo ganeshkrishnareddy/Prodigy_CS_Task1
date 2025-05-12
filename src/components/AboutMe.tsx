@@ -1,7 +1,8 @@
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { User, Award, BookOpen } from "lucide-react";
+import { User, Award, BookOpen, Mail, Phone, Linkedin, Github } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function AboutMe() {
   return (
@@ -46,6 +47,35 @@ export function AboutMe() {
             </p>
           </div>
         </CardContent>
+        <CardFooter className="p-6 pt-0 flex flex-col space-y-4">
+          <h3 className="font-medium text-lg text-cipher-primary">Contact Information</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full">
+            <Button variant="outline" className="flex items-center justify-start gap-2 h-10" asChild>
+              <a href="mailto:pganeshkrishnareddy@gmail.com" target="_blank" rel="noopener noreferrer">
+                <Mail className="h-4 w-4 text-cipher-primary" />
+                <span className="truncate">pganeshkrishnareddy@gmail.com</span>
+              </a>
+            </Button>
+            <Button variant="outline" className="flex items-center justify-start gap-2 h-10" asChild>
+              <a href="tel:+918374622779">
+                <Phone className="h-4 w-4 text-cipher-primary" />
+                <span>+91-8374622779</span>
+              </a>
+            </Button>
+            <Button variant="outline" className="flex items-center justify-start gap-2 h-10" asChild>
+              <a href="https://linkedin.com/in/pganeshkrishnareddy" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-4 w-4 text-cipher-primary" />
+                <span>pganeshkrishnareddy</span>
+              </a>
+            </Button>
+            <Button variant="outline" className="flex items-center justify-start gap-2 h-10" asChild>
+              <a href="https://github.com/ganeshkrishnareddy" target="_blank" rel="noopener noreferrer">
+                <Github className="h-4 w-4 text-cipher-primary" />
+                <span>github.com/ganeshkrishnareddy</span>
+              </a>
+            </Button>
+          </div>
+        </CardFooter>
       </Card>
     </motion.div>
   );
